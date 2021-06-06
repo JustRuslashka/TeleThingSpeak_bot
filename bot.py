@@ -21,9 +21,10 @@ def on_chat_message(msg):
                    [InlineKeyboardButton(text='Температура', callback_data='field1')],
                    [InlineKeyboardButton(text='Номер измерения', callback_data='entry_id')],
                    [InlineKeyboardButton(text='Время и дата измерения', callback_data='created_at')],
-
+                   [InlineKeyboardButton(text='GitHub бота', url="https://github.com/JustRuslashka/TeleThingSpeak_bot")],
+                     
                ])
-               
+   
 
     bot.sendMessage(chat_id, 'Выбери нужное', reply_markup=keyboard)
 
